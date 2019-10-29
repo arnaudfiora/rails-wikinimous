@@ -4,12 +4,16 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag    'https://use.fontawesome.com/releases/v5.0.10/css/all.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1529928226551-5a35bfca43ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
+      <h1>Welcome to Articles</h1>
+    </div>
     <%= yield %>
   </body>
 </html>

@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+.banner {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 64px;
+    text-align: center;
+  }

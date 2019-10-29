@@ -1,0 +1,14 @@
+<div class="wrapper bg-light-yellow">
+  <div class="container">
+
+    <h2><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+
+    <div class="actions">
+      <p><%= link_to 'Update', edit_article_path(@article), class: 'erb-link btn-crud' %></p>
+      <p><%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, class: 'erb-link btn-crud' %></p>
+      <p><%= link_to 'Back to all articles', articles_path %></p>
+    </div>
+
+  </div>
+</div>

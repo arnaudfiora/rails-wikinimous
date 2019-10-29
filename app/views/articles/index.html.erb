@@ -1,0 +1,15 @@
+<div class="wrapper bg-light-yellow">
+  <div class="container">
+
+    <h2>List of all articles</h2>
+
+    <p><%= link_to 'Add new article', new_article_path, class: 'erb-link btn-crud'%></p>
+
+    <% @articles.each do |article| %>
+      <p>
+        <%= link_to article.title, article_path(article), class: 'erb-link' %>
+      </p>
+    <% end %>
+
+  </div>
+</div>
